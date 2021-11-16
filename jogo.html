@@ -155,6 +155,7 @@
   </section>
 
   <section class="dados">
+    <img src="img/seta.png" class="seta" alt="">
     <header>
       <img src="img/escola.png" alt="">
     </header>
@@ -175,6 +176,11 @@
     });
 
     $("section.inicio button.consulta").on("click", function(){
+      $("section").hide();
+      $("section.consulta").show();
+    });
+
+    $("section.dados img.seta").on("click", function(){
       $("section").hide();
       $("section.consulta").show();
     });
